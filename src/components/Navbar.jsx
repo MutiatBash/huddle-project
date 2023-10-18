@@ -55,7 +55,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <Button/>
+        <Button text={"Get in touch"}/>
       </div>
     </div>
   );
