@@ -1,6 +1,6 @@
 import React from 'react'
 import aboutImage from '../assets/chef.png';
-import productImage from '../assets/chops1.jpg';
+import productImage from '../assets/snacks.png';
 const AboutUs =() => {
   return (
     <section className='py-16 mt-9' >
@@ -18,7 +18,7 @@ const AboutUs =() => {
       </div>
 
       <div className="container mx-auto flex flex-col md:flex-row  items-center">
-        <div className="md:w-1/2 mb-8 md:mb-0">
+        <div className="md:w-1/2 mt-11 mb-8 md:mb-0">
           <img src={productImage}alt="" className='w-1/2 h-auto rounded-md' />
         </div>
         <div className="md:w-1/2">
