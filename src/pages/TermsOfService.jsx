@@ -5,8 +5,8 @@ const TermsOfService = () => {
   return (
     <div>
       <Navbar />
-      <div className="terms-container">
-      <h1>Privacy Policy </h1>
+      <div className="terms-container py-4 px-4 md:px-14">
+      <h1 className="font-semibold text-4xl">Privacy Policy </h1>
         <p>
             Welcome to Grunt! We are committed to safeguarding your privacy and protecting your personal information. This Privacy Policy explains how we collect, use, and protect your data when you visit our website or use our services. By accessing or using our website and services, you consent to the practices described in this policy.
         </p>
