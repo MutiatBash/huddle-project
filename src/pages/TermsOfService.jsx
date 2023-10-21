@@ -7,40 +7,41 @@ const TermsOfService = () => {
       <Navbar />
       <div className="terms-container py-4 px-4 md:px-14">
       <h1 className="font-semibold text-4xl">Privacy Policy </h1>
-        <p>
-            Welcome to Grunt! We are committed to safeguarding your privacy and protecting your personal information. This Privacy Policy explains how we collect, use, and protect your data when you visit our website or use our services. By accessing or using our website and services, you consent to the practices described in this policy.
+        <p className="mb-3">
+            Welcome to Huddle! We are committed to safeguarding your privacy and protecting your personal information. This Privacy Policy explains how we collect, use, and protect your data when you visit our website or use our services. By accessing or using our website and services, you consent to the practices described in this policy.
         </p>
         
         <h3 className="font-semibold text-2xl">Information We Collect</h3>
         <p>We may collect various types of information, including but not limited to:</p>
         <p>
-            <span>Personal Information:</span> This may include your name, email address, postal address, phone number, and other information you provide to us directly.
+            <span className="font-semibold">Personal Information:</span> This may include your name, email address, postal address, phone number, and other information you provide to us directly.
         </p>
         <p>
-            <span>Device Information:</span> We may collect information about your device, including its type, operating system, browser, and IP address.
+            <span className="font-semibold">Device Information:</span> We may collect information about your device, including its type, operating system, browser, and IP address.
         </p>
-        <p>
-            <span>Usage Information:</span> We may collect data about how you use our website and services, including pages visited, actions taken, and interaction with content.
+        <p className="mb-3"> 
+            <span className="font-semibold">Usage Information:</span> We may collect data about how you use our website and services, including pages visited, actions taken, and interaction with content.
         </p>
             
-        <h3 className="font-semibold text-2xl">Information We Collect</h3>
+        <h3 className="font-semibold text-2xl">How we collect your information</h3>
         <p>We collect information in the following ways:</p>
         <p>
-            <span>Directly from You:</span> We collect information when you voluntarily provide it, such as when you fill out forms or contact us.
+            <span className="font-semibold">Directly from You:</span> We collect information when you voluntarily provide it, such as when you fill out forms or contact us.
         </p> 
-        <p>
-            <span>Automatically:</span> We use cookies and similar tracking technologies to collect data about your interaction with our website. You can manage your cookie preferences in your browser settings.
+        <p className="mb-3">
+            <span className="font-semibold">Automatically:</span> We use cookies and similar tracking technologies to collect data about your interaction with our website. You can manage your cookie preferences in your browser settings.
         </p>
 
         <h3 className="font-semibold text-2xl">How We Use Your Information</h3>
         <p >We use the information we collect for various purposes, including:</p>
-        <ol className="mb-3">
+
+        <ul className="mb-3">
             <li>Providing and improving our products and services.</li>
             <li>Personalizing your experience on our website.</li>
             <li>Communicating with you, including responding to your inquiries.</li>
             <li>Analyzing user behavior and trends to enhance our offerings.</li>
             <li>Complying with legal obligations and protecting our rights.</li>
-        </ol>
+        </ul>
 
         <h3 className="font-semibold text-2xl">Data Protection and Security</h3>
         <p className="mb-2">
