@@ -1,6 +1,5 @@
-import React from 'react';
+// import React from 'react';
 import chefImg from '../assets/chef.avif';  
-// import {Button} from '../Components/Button'
 
 const Chef = () => {
     return(
