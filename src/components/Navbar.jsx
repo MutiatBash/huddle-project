@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 // import Logo from '../assets/svg/logo.svg'
 import { Link, useLocation } from "react-router-dom";
-import {Button} from "./Button"
+import { Button } from "./Button";
+import { MobileMenu } from "./MobileMenu";
 
-const links = [
+export const links = [
   {
     id: 1,
     url: "/",
@@ -28,9 +29,9 @@ const links = [
 
 const Navbar = () => {
   const location = useLocation();
-
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <div className="w-full h-full py-4 px-4 md:px-14 bg-white border border-b-[#C6C9CF] sticky top-0">
+    <div className="w-full h-full py-4 px-4 md:px-14 bg-white border border-b-[#C6C9CF] sticky top-0 z-20">
       <div className="w-full flex items-center justify-between">
         <div>
           {/* <img
@@ -55,7 +56,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <Button text={"Get in touch"}/>
+        <Button text={"Get in touch"} className="hidden lg:block" />
+         <button></button>
+        {menuOpen && <MobileMenu />}
       </div>
     </div>
   );
