@@ -46,9 +46,9 @@ const Reviews = () => {
     ],
   };
   return (
-    <section className="p-4 lg:p-16" id="testimonial">
-      <div className="flex flex-col gap-2 items-center justify-between">
-        <h2 className="font-bold text-[3rem]">What Customers Say</h2>
+    <section className="p-4 lg:p-16" id="reviews">
+      <div className="flex flex-col lg:gap-2 items-center justify-between text-center">
+        <h2 className="font-bold text-[1.5rem] lg:text-[3rem]">What Customers Say</h2>
         <p className="text-[1.2rem]">Hear from our loyal customers</p>
       </div>
       <div className="w-full py-3">

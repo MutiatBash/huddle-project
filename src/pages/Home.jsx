@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <div className="h-full">
       <Navbar />
-      {/* <h1>Home Page</h1> */}
       <Hero/>
+      <About/>
       <Dish/>
       <Chef/>
       <Reviews />

@@ -35,7 +35,7 @@ export const clients = [
     id: 5,
     src: "/images/client1.JPG",
     name: "Theresa Webb",
-    role: "President of Sales at Binford Ltd",
+    role: "President of Sales at Binford",
     comment:
       "The attendants were very receptive while we talked about my issues, we discussed the root of the problem, what were the current challenges and the way forward from those challenges. Their method of approaching legal issues is so impressive, can't recommend TRPLAW enough.",
   },
