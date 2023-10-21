@@ -1,11 +1,9 @@
 import { Routes, Route } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 import Home from "./pages/Home";
 import Information from "./pages/Information";
 import Shop from "./pages/Shop";
 import TermsOfService from "./pages/TermsOfService";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
