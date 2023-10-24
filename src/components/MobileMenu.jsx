@@ -5,24 +5,26 @@ import { links } from "./Navbar";
 export const MobileMenu = ({ text, className }) => {
   const location = useLocation();
   return (
-    <div className="md:hidden">
-      <ul className="hidden lg:flex items-center gap-5 lg:gap-[3rem]">
-        {links.map((links) => (
-          <li className="group relative">
-            <Link
-              to={links.url}
-              key={links.id}
-              className={`nav-item text-[#353A43] transition duration-300 ease-in text-lg font-medium ${
-                location.pathname === links.url ? " text-[#ff7518] p-1" : ""
-              }`}
-            >
-              {links.text}
-            </Link>
-            <div className="absolute w-full left-0 h-0.5 bg-[#ff7518] transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></div>
-          </li>
-        ))}
-      </ul>
-      <Button text={"Get in touch"} />
+    <div className="bg-[#22212133] z-30 h-screen w-full inset-x-0 fixed top-16">
+      <div className="lg:hidden bg-white w-full space-y-4 p-3 py-6 pb-8 flex flex-col items-center">
+        <ul className="lg:hidden flex flex-col items-center gap-5 ">
+          {links.map((links) => (
+            <li className="group relative">
+              <Link
+                to={links.url}
+                key={links.id}
+                className={`nav-item text-[#353A43] transition duration-300 ease-in text-lg font-medium ${
+                  location.pathname === links.url ? " text-[#ff7518]" : ""
+                }`}
+              >
+                {links.text}
+              </Link>
+              <div className="absolute w-full left-0 h-0.5 bg-[#ff7518] transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></div>
+            </li>
+          ))}
+        </ul>
+        <Button text={"Get in touch"} className="w-[100%] px-8 py-3" />
+      </div>
     </div>
   );
 };

@@ -1,23 +1,31 @@
 // import heroImg from "../../assets/images/Reviews.svg";
 // import heroBubble from "../../assets/images/bubble.svg";
-import Button from "../components/Button";
+import {Button} from "../components/Button";
 const HeroShop = () => {
   return (
-    <section className="p-8 lg:p-16">
-      <div className="flex flex-col sm:flex-row items-center md:items-start justify-between gap-12 h-full">
-        <div className="flex flex-col items-center md:items-start gap-5 md:gap-9 md:w-[45%] md:pt-16">
-          <h1 className="text-fh-2xl-bold text-center md:text-left md:text-fh-5xl-bold">
-            Empower Your Feedback to Make a Difference
+    <section className="p-4 py-6 md:p-10 lg:p-16">
+      <div className="flex flex-col sm:flex-row items-center md:items-start justify-between gap-6 md:gap-12 h-full">
+        <div className="flex flex-col items-center md:items-start gap-5 lg:gap-6 md:w-[45%]">
+          <h1 className="font-bold text-center md:text-left lg:text-[3rem] text-[1.5rem] lg:leading-[3.5rem]">
+            Do you want some tasty finger food?
           </h1>
-          <p className="text-fh-base sm:w-[88%] md:text-fh-lg text-center md:text-left">
-            With FeedBackHub, you can easily share your experiences and provide
-            feedback to the products and services you love
+          <p className="text-base sm:w-[88%] lg:text-lg text-center md:text-left">
+            With a few clicks you can satisfy your cravings. Walk into our store or place an order to be delivered to your doorstep.
           </p>
-          <Button text={"Write a Review"} />
+          <div className="bg-white shadow rounded-lg p-6 w-full flex flex-col gap-8">
+            <div className="flex flex-row items-center gap-3">
+              <p className="bg-[#fdede3] p-2 rounded-md text-[#ff7518] font-bold px-3">
+                Delivery
+              </p>
+              <p>Pickup</p>
+            </div>
+            <div className="flex flex-row justify-between items-center border rounded-md px-1">
+              <input className="w-full p-3 py-4 focus:outline-none" placeholder="search for a meal" />
+              <Button text={"Search"} className="" />
+            </div>
+          </div>
         </div>
-        <div className="px-10 md:p-0 sm:w-[40%] flex flex-col relative">
-          
-        </div>
+        <div className="px-10 md:p-0 sm:w-[40%] flex flex-col relative"></div>
       </div>
     </section>
   );
