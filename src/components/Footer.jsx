@@ -10,16 +10,16 @@ const Footer = () => {
             {/* <img src={Logo} alt="" /> */}
             <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
                 <div>
-                <Link className='text-white font-medium text-lg' href="/">Home</Link>
+                <Link className='text-white font-medium text-lg' to="/">Home</Link>
                 </div>
                 <div>
-                <Link className='text-white font-medium text-lg' href="/information">Information</Link>
+                <Link className='text-white font-medium text-lg'to="/information">Information</Link>
                 </div>
                 <div>
-                <Link className='text-white font-medium text-lg' href="/shop">Shop</Link>
+                <Link className='text-white font-medium text-lg' to="/shop">Shop</Link>
                 </div>
                 <div>
-                <Link className='text-white font-medium text-lg' href="/terms-of-service">Terms of Service</Link>
+                <Link className='text-white font-medium text-lg' to="/terms-of-service">Terms of Service</Link>
                 </div>
             </div>
         </div>
