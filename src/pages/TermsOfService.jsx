@@ -1,5 +1,6 @@
 import { termsData } from "../data";
 import Navbar from "../components/Navbar";
+import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faShieldHalved } from "@fortawesome/free-solid-svg-icons";
@@ -9,8 +10,8 @@ const TermsOfService = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex flex-col gap-5 md:gap-8 py-4 px-4 md:px-16 md:py-14 lg:py-16">
-        <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-5 md:gap-8 py-4 md:py-14 lg:py-16 ">
+        <div className="flex flex-col gap-3 text-center md:text-left px-4 md:px-10 lg:px-16  py-1">
           <h1 className="font-semibold text-4xl">Privacy Policy </h1>
           <p className="">
             Welcome to Huddle! We are committed to safeguarding your privacy and
@@ -20,8 +21,10 @@ const TermsOfService = () => {
             services, you consent to the practices described in this policy.
           </p>
         </div>
-        <div className="flex flex-col gap-3">
-          <h3 className="font-semibold text-2xl">Information We Collect</h3>
+        <div className="flex flex-col gap-3 bg-[#fafafa] px-4 md:px-10 lg:px-16 py-10">
+          <h3 className="font-semibold text-2xl text-center md:text-left">
+            Information We Collect
+          </h3>
           <p>
             We may collect various types of information, including but not
             limited to:
@@ -42,8 +45,8 @@ const TermsOfService = () => {
             pages visited, actions taken, and interaction with content.
           </p>
         </div>
-        <div className="flex flex-col gap-3">
-          <h3 className="font-semibold text-2xl">
+        <div className="flex flex-col gap-3 px-4 md:px-10 lg:px-16 ">
+          <h3 className="font-semibold text-2xl text-center md:text-left">
             How we collect your information
           </h3>
           <p>We collect information in the following ways:</p>
@@ -59,42 +62,42 @@ const TermsOfService = () => {
             in your browser settings.
           </p>
         </div>
-
-        <h3 className="font-semibold text-2xl">How We Use Your Information</h3>
-        <p>
-          We use the information we collect for various purposes, including:
-        </p>
-
-        <ul className="mb-3">
-          <li>Providing and improving our products and services.</li>
-          <li>Personalizing your experience on our website.</li>
-          <li>
-            Communicating with you, including responding to your inquiries.
-          </li>
-          <li>Analyzing user behavior and trends to enhance our offerings.</li>
-          <li>Complying with legal obligations and protecting our rights.</li>
-        </ul>
+        <div className="flex flex-col gap-3 bg-[#fafafa] px-4 md:px-10 lg:px-16 py-10">
+          <h3 className="font-semibold text-2xl text-center md:text-left">
+            How We Use Your Information
+          </h3>
+          <p>
+            We use the information we collect for various purposes, including:
+          </p>
+          <ul className="mb-3">
+            <li>Providing and improving our products and services.</li>
+            <li>Personalizing your experience on our website.</li>
+            <li>
+              Communicating with you, including responding to your inquiries.
+            </li>
+            <li>
+              Analyzing user behavior and trends to enhance our offerings.
+            </li>
+            <li>Complying with legal obligations and protecting our rights.</li>
+          </ul>
+        </div>
         {/* GRID VIEW */}
-        <div className="grid md:grid-col-2 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-10">
+        <div className="grid py-10 md:grid-cols-2 md:gap-12 gap-8 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-10 text-center md:text-left px-4 md:px-10 lg:px-16 ">
           {termsData.map((terms) => (
-            <div className="flex flex-col gap-3 items-center md:items-start">
+            <div className="flex flex-col gap-3 items-center md:items-start text-center md:text-left">
               <div className="bg-[#faf0eaef] rounded-full px-4 py-3 text-center">
                 <FontAwesomeIcon
                   icon={terms.Icon}
                   style={{ color: "#ff7518" }}
                 />
               </div>
-              <h3 className="font-semibold text-2xl">{terms.title}</h3>
+              <h3 className="font-semibold text-2xl md:text-xl lg:text-2xl">{terms.title}</h3>
               <p className="mb-2">{terms.details}</p>
             </div>
           ))}
         </div>
-        <h3 className="font-semibold text-2xl">Contact Us</h3>
-        <p className="mb-3">
-          If you have any questions or concerns about this Privacy Policy or
-          your data, please contact us at:
-        </p>
       </div>
+      <ContactUs />
       <Footer />
     </div>
   );
