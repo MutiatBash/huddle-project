@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 // import Logo from '../assets/svg/logo_white.svg'
 
 const Footer = () => {
@@ -9,16 +10,16 @@ const Footer = () => {
             {/* <img src={Logo} alt="" /> */}
             <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
                 <div>
-                <a className='text-white font-medium text-lg' href="/">Home</a>
+                <Link className='text-white font-medium text-lg' to="/">Home</Link>
                 </div>
                 <div>
-                <a className='text-white font-medium text-lg' href="/information">Information</a>
+                <Link className='text-white font-medium text-lg'to="/information">Information</Link>
                 </div>
                 <div>
-                <a className='text-white font-medium text-lg' href="/shop">Shop</a>
+                <Link className='text-white font-medium text-lg' to="/shop">Shop</Link>
                 </div>
                 <div>
-                <a className='text-white font-medium text-lg' href="/terms-of-service">Terms of Service</a>
+                <Link className='text-white font-medium text-lg' to="/terms-of-service">Terms of Service</Link>
                 </div>
             </div>
         </div>
