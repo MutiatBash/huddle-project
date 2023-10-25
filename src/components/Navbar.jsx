@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 // import Logo from '../assets/svg/logo.svg'
 import { Link, useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "./Button";
 import { MobileMenu } from "./MobileMenu";
 
@@ -30,8 +34,13 @@ export const links = [
 const Navbar = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <div className="w-full h-full py-4 px-4 md:px-14 bg-white border border-b-[#C6C9CF] sticky top-0 z-20">
+    <div className="w-full flex flex-col gap-3 h-full py-4 px-4 md:px-14 lg:px-16 bg-white border border-b-[#C6C9CF] sticky top-0 z-20">
       <div className="w-full flex items-center justify-between">
         <div>
           {/* <img
@@ -42,12 +51,11 @@ const Navbar = () => {
         </div>
         <ul className="hidden lg:flex items-center gap-5 lg:gap-[3rem]">
           {links.map((links) => (
-            <li className="group relative">
+            <li className="group relative" key={links.id}>
               <Link
                 to={links.url}
-                key={links.id}
                 className={`nav-item text-[#353A43] transition duration-300 ease-in text-lg font-medium ${
-                  location.pathname === links.url ? " text-[#ff7518] p-1" : ""
+                  location.pathname === links.url ? " text-[#ff7518]" : ""
                 }`}
               >
                 {links.text}
@@ -56,10 +64,17 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <FontAwesomeIcon icon={faCartShopping} />
         <Button text={"Get in touch"} className="hidden lg:block" />
-         <button></button>
-        {menuOpen && <MobileMenu />}
+        <button onClick={handleMenu} className="block lg:hidden">
+          {menuOpen ? (
+            <FontAwesomeIcon icon={faXmark} />
+          ) : (
+            <FontAwesomeIcon icon={faBars} />
+          )}
+        </button>
       </div>
+      {menuOpen && <MobileMenu />}
     </div>
   );
 };
