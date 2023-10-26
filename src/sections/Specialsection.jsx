@@ -1,8 +1,8 @@
 // import React from "react";
-import chef1 from '../assets/chef1.jfif'
-import chef2 from '../assets/chef2.jfif'
-import chef3 from '../assets/chef3.jfif'
-import chef4 from '../assets/chef4.jfif'
+import chef1 from '../assets/chef1.jpg';
+import chef5 from '../assets/chef5.jpg';
+import chef3 from '../assets/chef3.jpg';
+import chef4 from '../assets/chef4.jpg';
 
 const Specialsection = () => {
     return (
@@ -25,7 +25,7 @@ const Specialsection = () => {
                     
                 </div>
                 <div className="chef h-72 w-52">
-                    <div className="chefImg justify-center bg-no-repeat bg-cover bg-center h-72 w-52 text-center relative rounded-[15px]" style={{backgroundImage: `url(${chef2})`}}>
+                    <div className="chefImg justify-center bg-no-repeat bg-cover bg-center h-72 w-52 text-center relative rounded-[15px]" style={{backgroundImage: `url(${chef5})`}}>
                         <div className="chefDetails h-14 w-[100%] absolute bottom-0 text-center bg-gradient-to-b from-black/90 to-black/10 text-white pt-[4px] rounded-b-[15px]">
                             <h5 className="font-semibold">Jeff Riely</h5>
                             <p className="font-extralight">Suez Chef</p>

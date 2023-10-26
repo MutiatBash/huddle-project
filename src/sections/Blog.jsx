@@ -1,7 +1,7 @@
 // import React from "react";
-import img1 from '../assets/img1.jfif';
-import img2 from '../assets/img2.jfif';
-import img3 from '../assets/img3.jfif';
+import img1 from '../assets/img1.jpg';
+import img2 from '../assets/img1.jpg';
+import img3 from '../assets/img1.jpg';
 const Blog = () => {
     return (
       <div>
