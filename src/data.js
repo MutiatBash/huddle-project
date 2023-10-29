@@ -95,45 +95,121 @@ export const termsData = [
   },
 ];
 
-export const products = [
+export const products = {
+   popular:[
   {
     id: 1,
-    src: "/images/client1.JPG",
-    name: "Theresa Webb",
-    role: "President of Sales at Binford Ltd",
-    comment:
-      "The attendants were very receptive while we talked about my issues, we discussed the root of the problem, what were the current challenges and the way forward from those challenges. Their method of approaching legal issues is so impressive, can't recommend TRPLAW enough.",
+    src: "/images/spring-roll1.JPG",
+    title: "Spring Rolls & Sauce",
+    details: "President of Sales at Binford Ltd",
+    price: `${1},${500}`,
   },
   {
     id: 2,
-    src: "/images/client2.JPG",
-    name: "Annette Black",
-    role: "Brand Manager at J&M Enterprise",
-    comment:
-      "The lawyers were very receptive while we talked about my issues, we discussed the root of the problem, what were the current challenges and the way forward from those challenges. Their method of approaching legal issues is so impressive, can't recommend TRPLAW enough.",
+    src: "/images/finger-combo.JPG",
+    title: "Finger-licking Combo",
+    details: "Brand Manager at J&M Enterprise",
+    price: "5,000",
   },
   {
     id: 3,
-    src: "/images/client5.JPG",
-    name: "Annette Black",
-    role: "Brand Manager at J&M Enterprise",
-    comment:
-      "The lawyers were very receptive while we talked about my issues, we discussed the root of the problem, what were the current challenges and the way forward from those challenges. Their method of approaching legal issues is so impressive, can't recommend TRPLAW enough.",
+    src: "/images/samosa1.JPG",
+    title: "Samosa & Beef",
+    details: "Brand Manager at J&M Enterprise",
+    price:"1,500",
   },
   {
     id: 4,
-    src: "/images/client2.JPG",
-    name: "Annette Black",
-    role: "Brand Manager at J&M Enterprise",
-    comment:
-      "The lawyers were very receptive while we talked about my issues, we discussed the root of the problem, what were the current challenges and the way forward from those challenges. Their method of approaching legal issues is so impressive, can't recommend TRPLAW enough.",
+    src: "/images/yam-fish.JPG",
+    title: "Fish & Yam sticks",
+    details: "Brand Manager at J&M Enterprise",
+    price: "3,000",
   },
   {
     id: 5,
-    src: "/images/client1.JPG",
-    name: "Theresa Webb",
-    role: "President of Sales at Binford",
-    comment:
-      "The attendants were very receptive while we talked about my issues, we discussed the root of the problem, what were the current challenges and the way forward from those challenges. Their method of approaching legal issues is so impressive, can't recommend TRPLAW enough.",
+    src: "/images/smoked-liver.JPG",
+    title: "Smoked Liver",
+    details: "President of Sales at Binford",
+    price: "2,500",
   },
-];
+  {
+    id: 6,
+    src: "/images/spring-roll3.JPG",
+    title: "Spring Rolls",
+    details: "President of Sales at Binford",
+    price: "2,500",
+  },
+  {
+    id: 7,
+    src: "/images/puff-puff2.JPG",
+    title: "Sweetened Puff-puff",
+    details: "President of Sales at Binford",
+    price: "2,500",
+  },
+  {
+    id: 8,
+    src: "/images/smokey-wings1.JPG",
+    title: "Roasted Wings",
+    details: "President of Sales at Binford",
+    price: "2,500",
+  },
+  ],
+  special:[
+  {
+    id: 1,
+    src: "/images/gizdodo2.JPG",
+    title: "Peppered Gizzard",
+    details: "President of Sales at Binford Ltd",
+    price: `${1},${500}`,
+  },
+  {
+    id: 2,
+    src: "/images/chicken-balls.JPG",
+    title: "Chicken Balls",
+    details: "Brand Manager at J&M Enterprise",
+    price: "5,000",
+  },
+  {
+    id: 3,
+    src: "/images/grilled-lamb.JPG",
+    title: "Grilled Lamb",
+    details: "Brand Manager at J&M Enterprise",
+    price:"1,500",
+  },
+  {
+    id: 4,
+    src: "/images/scotch-egg1.JPG",
+    title: "Scotch Egg",
+    details: "Brand Manager at J&M Enterprise",
+    price: "3,000",
+  },
+  {
+    id: 5,
+    src: "/images/grilled-liver2.JPG",
+    title: "Grilled Liver",
+    details: "President of Sales at Binford",
+    price: "2,500",
+  },
+  {
+    id: 6,
+    src: "/images/spring-roll2.JPG",
+    title: "Spring Rolls",
+    details: "President of Sales at Binford",
+    price: "2,500",
+  },
+  {
+    id: 7,
+    src: "/images/caramel-drumsticks.JPG",
+    title: "Caramel Drumsticks",
+    details: "President of Sales at Binford",
+    price: "2,500",
+  },
+  {
+    id: 8,
+    src: "/images/gizdodo.JPG",
+    title: "Plantain & Gizzard",
+    details: "President of Sales at Binford",
+    price: "2,500",
+  },
+  ]
+};
