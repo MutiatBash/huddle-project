@@ -97,7 +97,6 @@ const TermsOfService = () => {
           ))}
         </div>
       </div>
-      <ContactUs />
       <Footer />
     </div>
   );

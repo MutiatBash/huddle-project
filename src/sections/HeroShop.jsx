@@ -25,7 +25,7 @@ const HeroShop = () => {
                 className="w-full p-3 py-4 focus:outline-none"
                 placeholder="search for a meal"
               />
-              <Button text={"Search"} className="" />
+              <Button text={"Search"} className="text-white" />
             </div>
           </div>
         </div>

@@ -20,7 +20,7 @@ const ProductsSection = ()=>{
                   />
                 </div>
                 <div className="p-4 bg-white rounded-tr flex flex-col gap-1 w-full">
-                  <h3 className="font-semibold text-2xl md:text-xl lg:text-2xl">
+                  <h3 className="font-semibold text-lg md:text-xl lg:text-xl">
                     {product.title}
                   </h3>
                   <p className="mb-2">{product.details}</p>
@@ -29,7 +29,7 @@ const ProductsSection = ()=>{
                       <FontAwesomeIcon icon={faNairaSign} size="sm" />
                       {product.price}
                     </p>
-                    <Button text={"Add to cart"} />
+                    <Button text={"Add to cart"} className="text-white" />
                   </div>
                 </div>
               </div>
@@ -48,7 +48,7 @@ const ProductsSection = ()=>{
                   />
                 </div>
                 <div className="p-4 bg-white rounded-tr flex flex-col gap-1 w-full">
-                  <h3 className="font-semibold text-2xl md:text-xl lg:text-2xl">
+                  <h3 className="font-semibold text-lg md:text-xl lg:text-xl">
                     {product.title}
                   </h3>
                   <p className="mb-2">{product.details}</p>
@@ -57,7 +57,7 @@ const ProductsSection = ()=>{
                       <FontAwesomeIcon icon={faNairaSign} size="sm" />
                       {product.price}
                     </p>
-                    <Button text={"Add to cart"} />
+                    <Button text={"Add to cart"}className="text-white" />
                   </div>
                 </div>
               </div>

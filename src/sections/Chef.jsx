@@ -3,10 +3,10 @@ import chefImg from '../assets/chef.avif';
 
 const Chef = () => {
     return(
-        <div className="flex md:col mt-10 justify-between w-full items-center py-4 px-4 md:px-14">
-            <div className="left">
+        <div className="flex md:col mt-10 justify-between w-full items-center py-4 px-4 md:px-14 lg:px-16">
+            <div className="w-[60%]">
                 <h1 className='text-5xl mb-4 w-3/5 font-semibold '>Cooked by the best chefs in the world.</h1>
-                <p className='mb-4 text-lg'>There are many variations of pasta available, we also have altercations. One thing is certain</p>
+                <p className='mb-4 text-lg lg:w-[75%]'>There are many variations of our meals available, we also have altercations. One thing is certain</p>
                 <div>
                     <div className="check1 flex gap-3">
                         <i className="ri-checkbox-line"></i>
