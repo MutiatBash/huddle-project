@@ -64,9 +64,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="flex flex-row gap-10 items-center justify-between">
-        <FontAwesomeIcon icon={faCartShopping} />
-        <Button text={"Get in touch"} className="hidden lg:block text-white" />
+        <div className="hidden lg:flex flex-row gap-10 items-center justify-between">
+          <FontAwesomeIcon icon={faCartShopping} />
+          <Button text={"Get in touch"} className=" text-white" />
         </div>
         <button onClick={handleMenu} className="block lg:hidden">
           {menuOpen ? (

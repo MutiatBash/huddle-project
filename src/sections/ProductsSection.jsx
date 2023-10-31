@@ -1,5 +1,6 @@
 import {products} from "../data"
 import {Button} from "../components/Button"
+import {Link} from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faNairaSign
@@ -7,12 +8,12 @@ import {
 
 const ProductsSection = ()=>{
     return (
-      <section className="flex flex-col gap-10">
+      <section className="flex flex-col gap-10 py-4 lg:py-14">
         <div className="px-4 md:px-10 lg:px-16">
           <h3 className="font-semibold text-[2rem]">Our Popular Meals</h3>
           <div className="grid py-10 md:grid-cols-3 md:gap-12 gap-8 lg:grid-cols-4 lg:gap-x-10 lg:gap-y-16 text-center md:text-left ">
             {products.popular.map((product) => (
-              <div className="flex flex-col gap-3 items-center md:items-start text-center md:text-left border rounded-lg ">
+              <div className="flex flex-col gap-3 items-center md:items-start text-center md:text-left border rounded-xl ">
                 <div className="w-full">
                   <img
                     src={product.src}
@@ -29,7 +30,8 @@ const ProductsSection = ()=>{
                       <FontAwesomeIcon icon={faNairaSign} size="sm" />
                       {product.price}
                     </p>
-                    <Button text={"Add to cart"} className="text-white" />
+                    {/* <Button text={"Add to cart"} className="text-white" /> */}
+                    <Link to="/food-details" className="font-semibold  text-[#ff7518]">View</Link>
                   </div>
                 </div>
               </div>
@@ -40,7 +42,7 @@ const ProductsSection = ()=>{
           <h3 className="font-semibold text-[2rem]">Chef's Special</h3>
           <div className="grid py-10 md:grid-cols-3 md:gap-12 gap-8 lg:grid-cols-4 lg:gap-x-10 lg:gap-y-16 text-center md:text-left ">
             {products.special.map((product) => (
-              <div className="flex flex-col gap-3 items-center md:items-start text-center md:text-left border rounded-lg ">
+              <div className="flex flex-col gap-3 items-center md:items-start text-center md:text-left border rounded-xl ">
                 <div className="w-full">
                   <img
                     src={product.src}
@@ -57,7 +59,8 @@ const ProductsSection = ()=>{
                       <FontAwesomeIcon icon={faNairaSign} size="sm" />
                       {product.price}
                     </p>
-                    <Button text={"Add to cart"}className="text-white" />
+                    {/* <Button text={"Add to cart"}className="text-white" /> */}
+                    <Link to="/food-details"  className="font-semibold  text-[#ff7518]">View</Link>
                   </div>
                 </div>
               </div>
