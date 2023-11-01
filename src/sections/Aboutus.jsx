@@ -14,7 +14,7 @@ const Aboutus = () => {
               <p className="py-[30px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis molestiae alias adipisci quam mollitia corporis 
                 maiores ducimus dolore 
                 consequuntur quod. Veniam nam velit accusantium nemo? Nisi similique numquam placeat? Earum.</p>
-                <Button text={"READ MORE"}></Button>
+                <Button text={"READ MORE"} className="text-white"></Button>
             </div>
         </div>
       </div>
