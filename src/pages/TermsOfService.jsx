@@ -11,7 +11,7 @@ const TermsOfService = () => {
     <div>
       <Navbar />
       <div className="flex flex-col gap-5 md:gap-8 py-4 md:py-14 lg:py-16 ">
-        <div className="flex flex-col gap-3 text-center md:text-left px-4 md:px-10 lg:px-16  py-1">
+        <div className="flex flex-col gap-3 text-center md:text-left px-4 md:px-10 lg:px-16 py-1">
           <h1 className="font-semibold text-4xl">Privacy Policy </h1>
           <p className="">
             Welcome to Huddle! We are committed to safeguarding your privacy and

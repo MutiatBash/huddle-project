@@ -8,8 +8,8 @@ const Dish = () => {
             <h1 className='text-4xl mb-4 font-semibold text-center'>Our special dish</h1>
             <p className='mb-4 text-center text-base'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, fuga.</p>
                 {/* <Button text={"Get started"}></Button> */}
-                <div className="boxes flex lg:flex-row mt-4 text-center justify-between md:flex-col">
-                    <div className="box1 px-10 py-5 shadow-xl">
+                <div className="boxes flex lg:flex-row mt-4 text-center justify-between md:flex-col gap-6">
+                    <div className="box1 px-10 py-5 shadow-lg">
                         <img className='rounded-full mx-auto w-32 mb-2' src={plate1} alt="" />
                         <h3>Chicken veg mix</h3>
                         <p className=''>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, ullam.</p>
@@ -25,7 +25,7 @@ const Dish = () => {
                             <button className='rounded-md hover:bg-[#ff4e18ee] bg-[#ff7518] py-2 px-2 text-white text-sm'>Add to cart</button>
                         </div>
                     </div>
-                    <div className="box2 px-10 py-5 shadow-xl">
+                    <div className="box2 px-10 py-5 shadow-lg">
                         <img className='rounded-full mx-auto w-32 mb-2' src={plate1} alt="" />
                         <h3>Chicken veg mix</h3>
                         <p className=''>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, ullam.</p>
@@ -41,7 +41,7 @@ const Dish = () => {
                             <button className='rounded-md hover:bg-[#ff4e18ee] bg-[#ff7518] py-2 px-2 text-white text-sm'>Add to cart</button>
                         </div>
                     </div>
-                    <div className="box3 px-10 py-5 shadow-xl">
+                    <div className="box3 px-10 py-5 shadow-lg">
                         <img className='rounded-full mx-auto w-32 mb-2' src={plate1} alt="" />
                         <h3>Chicken veg mix</h3>
                         <p className=''>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, ullam.</p>
