@@ -22,7 +22,7 @@ const ContactUs = () => {
             Contact Us
           </h2>
           <p className="md:w-[81%] text-lg  leading-[27px] md:mt-4 text-center md:text-left">
-            We are here to assist you with your legal needs and answer any
+            We are here to assist you with your concerns and answer any
             questions you may have. Please don't hesitate to reach out to us
             using the following contact information
           </p>
@@ -77,7 +77,7 @@ const ContactUs = () => {
         </div>
 
         <div className="w-full bg-white pt-8 px-4 md:px-12 lg:pl-14 shadow-[0px_2px_18px_-15px_rgba(0,0,0,0.4)]">
-          <h2 className="text-xl md:text-3xl lg:leading-[3.51875rem] font-semibold text-center md:text-left">
+          <h2 className="text-xl md:text-3xl lg:leading-[3.51875rem] font-medium text-center md:text-left">
             Drop a message if you have any concerns
           </h2>
           <div className="flex items-center gap-5 w-full h-full mt-4 relative pb-10">
@@ -94,7 +94,7 @@ const ContactUs = () => {
                   />
                 </div>
               </label>
-              <label htmlFor="password" className="mb-5 w-full lg:w-[420px]">
+              <label htmlFor="email" className="mb-5 w-full lg:w-[420px]">
                 Your Email
                 <div className="relative">
                   <input
@@ -119,7 +119,7 @@ const ContactUs = () => {
                   ></textarea>
                 </div>
               </label>
-              <Button text={"Send Message"} className="w-full text-center sm:w-[30%] lg:w-[42%] xl:w-[30%]"></Button>
+              <Button text={"Send Message"} className="w-full text-center sm:w-[30%] lg:w-[42%] xl:w-[30%] bg-white hover:text-white text-[#ff7518] border border-[#ff7518]"></Button>
             </div>
           </div>
         </div>

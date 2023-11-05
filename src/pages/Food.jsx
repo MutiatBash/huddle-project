@@ -1,7 +1,7 @@
 import productImg from "../assets/images/productImage.jpg";
 // import heroBubble from "../../assets/images/bubble.svg";
 import { Button } from "../components/Button";
-const HeroShop = () => {
+export const FoodDetails = () => {
   return (
     <section className="p-4 py-6 md:p-10 lg:p-16 border-b">
       <div className="flex flex-col sm:flex-row items-center md:items-start justify-between gap-6 md:gap-12 h-full">
@@ -30,12 +30,14 @@ const HeroShop = () => {
           </div>
         </div>
         <div className="px-10 md:p-0 sm:w-[40%] flex flex-col relative">
-          <img src={productImg} className="rounded-[50%] object-cover filter invert-[.05] sepia-[.25] hue-rotate-20 h-[500px]" />
+          <img
+            src={productImg}
+            className="rounded-[50%] object-cover filter invert-[.05] sepia-[.25] hue-rotate-20 h-[500px]"
+          />
         </div>
       </div>
-      
     </section>
   );
 };
 
-export default HeroShop;
+
