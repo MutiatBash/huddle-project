@@ -7,14 +7,19 @@ import TermsOfService from "./pages/TermsOfService";
 import "./App.css";
 
 function App() {
-
   return (
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/information" element={<Information />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/food-details" element={<FoodDetails />} />
+
+        <Route
+          path="/food-details/:category/:foodId"
+          element={<FoodDetails />}
+        />
+        {/* <Route path="/food-details/special/:foodId" element={<FoodDetails />} /> */}
+
         <Route path="/terms-of-service" element={<TermsOfService />} />
       </Routes>
     </div>
