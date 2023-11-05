@@ -77,13 +77,23 @@ const Navbar = () => {
           </Link>
           <Button text={"Get in touch"} className=" text-white" />
         </div>
-        <button onClick={handleMenu} className="block lg:hidden">
-          {menuOpen ? (
-            <FontAwesomeIcon icon={faXmark} />
-          ) : (
-            <FontAwesomeIcon icon={faBars} />
-          )}
-        </button>
+        <div className="flex lg:hidden flex-row gap-10 items-center justify-between">
+          <Link>
+            <div className="relative">
+              <span className="text-[#ff7518]  bg-orange-100 py-[0.11rem] w-[fit-content] text-center h-5 px-[0.4rem] bottom-3 font-bold text-xs absolute left-3 rounded-full ">
+                {cartItems.length}
+              </span>
+              <FontAwesomeIcon icon={faCartShopping} size="md" />
+            </div>
+          </Link>
+          <button onClick={handleMenu} className="">
+            {menuOpen ? (
+              <FontAwesomeIcon icon={faXmark} />
+            ) : (
+              <FontAwesomeIcon icon={faBars} />
+            )}
+          </button>
+        </div>
       </div>
       {menuOpen && <MobileMenu />}
     </div>

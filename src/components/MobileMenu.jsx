@@ -23,6 +23,7 @@ export const MobileMenu = () => {
             </li>
           ))}
         </ul>
+        
         <Button text={"Get in touch"} className="w-[100%] px-8 py-3 text-white" />
       </div>
     </div>
