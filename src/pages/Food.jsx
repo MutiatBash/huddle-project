@@ -2,12 +2,16 @@ import { useParams, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleArrowLeft,
+  faArrowLeftLong,
   faNairaSign,
   faCircleChevronLeft,
   faStar,
   faStarHalfStroke,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useState, useContext } from "react";
+import { CartContext } from "../CartContext";
 import { products } from "../data";
 import { Button } from "../components/Button";
 
@@ -15,11 +19,34 @@ export const FoodDetails = () => {
   const [quantity, setQuantity] = useState(0);
   const [selectedOption, setSelectedOption] = useState("");
   const { category, foodId } = useParams();
+  const { addToCart, setCartItems } = useContext(CartContext);
+
   const foods = products[category];
   const selectedFood = foods.find((food) => food.id === parseInt(foodId));
+  const successful = () => toast.success(`Added ${selectedFood.title} to cart`, {
+    progressclassName: "bg-[#ff5718]"
+  });
+  const warning = () =>
+    toast.warning(
+      "Nothing has been added to cart, please increase the quantity"
+    );
 
   function handleDrinkSelection(e) {
     setSelectedOption(e.target.value);
+  }
+
+  function handleAddToCart() {
+    let itemAdded = false;
+    if (quantity > 0) {
+      addToCart({ ...selectedFood, quantity });
+      itemAdded = true;
+    }
+
+    if (itemAdded) {
+      successful();
+    } else {
+      warning();
+    }
   }
 
   function handleQuantityIncrease() {
@@ -33,7 +60,7 @@ export const FoodDetails = () => {
     <section className="p-4 py-4 md:p-10 lg:p-16 lg:py-12 flex flex-col my-auto h-full">
       <Link to="/shop">
         <div className="py-6">
-          <FontAwesomeIcon icon={faCircleChevronLeft} size="xl" />
+          <FontAwesomeIcon icon={faArrowLeftLong} size="xl" />
         </div>
       </Link>
       {selectedFood ? (
@@ -74,7 +101,7 @@ export const FoodDetails = () => {
                   </span>
                 </div>
                 <div className="flex flex-row gap-3">
-                  <span className="italic">{selectedFood.rating}</span>
+                  <span className="italic text-sm">{selectedFood.rating}</span>
                   <div>
                     <span>
                       <FontAwesomeIcon
@@ -146,8 +173,13 @@ export const FoodDetails = () => {
             <div className="flex flex-row justify-between lg:justify-start items-center gap-6 w-full">
               <div className="flex flex-row items-center">
                 <button
+                  disabled={quantity === 0}
                   onClick={handleQuantityDecrease}
-                  className="bg-gray-50 px-5 py-3 font-semibold rounded-tl-md rounded-bl-md  border-r hover:shadow"
+                  className={` ${
+                    quantity === 0
+                      ? "bg-gray-100 hover:shadow-none text-gray-200 font-normal"
+                      : "bg-gray-50"
+                  } px-5 py-3 font-semibold rounded-tl-md rounded-bl-md  border-r hover:shadow`}
                 >
                   -
                 </button>
@@ -162,7 +194,7 @@ export const FoodDetails = () => {
                 </button>
               </div>
               <Button
-                onClick={handleQuantityIncrease}
+                onClick={handleAddToCart}
                 text={"Add to cart"}
                 className="text-white w-full px-6 "
               />

@@ -182,7 +182,8 @@ export const products = {
       id: 1,
       src: "/images/gizdodo2.JPG",
       title: "Peppered Gizzard",
-      details: "",
+      details:
+        "Spicy and flavoured gizzard, a side that combines tender gizzard with peppered sauce ",
       price: `${1},${500}`,
     },
     {
