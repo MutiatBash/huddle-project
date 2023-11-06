@@ -1,5 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCookieBite, faShieldHalved, faRotate, faLink, faServer, faLock } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCookieBite,
+  faShieldHalved,
+  faRotate,
+  faLink,
+  faServer,
+  faLock,
+} from "@fortawesome/free-solid-svg-icons";
 // import { faShieldHalved } from "@fortawesome/free-solid-svg-icons";
 
 export const clients = [
@@ -96,120 +103,157 @@ export const termsData = [
 ];
 
 export const products = {
-   popular:[
-  {
-    id: 1,
-    src: "/images/spring-roll1.JPG",
-    title: "Spring Rolls & Sauce",
-    details: "President of Sales at Binford Ltd",
-    price: `${1},${500}`,
-  },
-  {
-    id: 2,
-    src: "/images/finger-combo.JPG",
-    title: "Finger-licking Combo",
-    details: "Brand Manager at J&M Enterprise",
-    price: "5,000",
-  },
-  {
-    id: 3,
-    src: "/images/samosa1.JPG",
-    title: "Samosa & Beef",
-    details: "Brand Manager at J&M Enterprise",
-    price:"1,500",
-  },
-  {
-    id: 4,
-    src: "/images/yam-fish.JPG",
-    title: "Fish & Yam sticks",
-    details: "Brand Manager at J&M Enterprise",
-    price: "3,000",
-  },
-  {
-    id: 5,
-    src: "/images/smoked-liver.JPG",
-    title: "Smoked Liver",
-    details: "President of Sales at Binford",
-    price: "2,500",
-  },
-  {
-    id: 6,
-    src: "/images/spring-roll3.JPG",
-    title: "Spring Rolls",
-    details: "President of Sales at Binford",
-    price: "2,500",
-  },
-  {
-    id: 7,
-    src: "/images/puff-puff2.JPG",
-    title: "Sweetened Puff-puff",
-    details: "President of Sales at Binford",
-    price: "2,500",
-  },
-  {
-    id: 8,
-    src: "/images/smokey-wings1.JPG",
-    title: "Roasted Wings",
-    details: "President of Sales at Binford",
-    price: "2,500",
-  },
+  popular: [
+    {
+      id: 1,
+      src: "/images/spring-roll1.JPG",
+      title: "Spring Rolls & Sauce",
+      details:
+        "Cripsy and delicious spring rolls filled with a blend of vegetables and served with a savory dipping sauce",
+      price: `${1},${500}`,
+      rating: "4.78",
+    },
+    {
+      id: 2,
+      src: "/images/finger-combo.JPG",
+      title: "Finger-licking Combo",
+      details:
+        "A satisfying combination of sausage, kebabs, wings and crispy chips, perfect for sharing",
+      price: "5,000",
+      rating: "4.90",
+    },
+    {
+      id: 3,
+      src: "/images/samosa1.JPG",
+      title: "Samosa & Beef",
+      details:
+        "Spiced potato & pea-filled samosas, deep-fried to perfection and served hot with minced beef",
+      price: "1,500",
+      rating: "4.60",
+    },
+    {
+      id: 4,
+      src: "/images/yam-fish.JPG",
+      title: "Fish & Yam sticks",
+      details:
+        "Crispy fried yam paired with tender fish , served with a special sauce for a delightful meal",
+      price: "3,000",
+      rating: "4.78",
+    },
+    {
+      id: 5,
+      src: "/images/smoked-liver.JPG",
+      title: "Smoked Liver",
+      details:
+        "Savory smoked liver served with a hint of smoky flavour and a side of sauce",
+      price: "2,500",
+      rating: "4.58",
+    },
+    {
+      id: 6,
+      src: "/images/spring-roll3.JPG",
+      title: "Spring Rolls",
+      details:
+        "Cripsy and delicious spring rolls filled with a blend of vegetables",
+      price: "2,500",
+      rating: "4.88",
+    },
+    {
+      id: 7,
+      src: "/images/puff-puff2.JPG",
+      title: "Sweetened Puff-puff",
+      details:
+        "Sweet and fluffy puff-puff balls, with frosted sugar for a delighful taste",
+      price: "2,500",
+      rating: "4.75",
+    },
+    {
+      id: 8,
+      src: "/images/smokey-wings1.JPG",
+      title: "Roasted Wings",
+      details:
+        "Delicious and perfectly roasted chicken wings with a variety of flavours to choose from",
+      price: "2,500",
+      rating: "4.95",
+    },
   ],
-  special:[
-  {
-    id: 1,
-    src: "/images/gizdodo2.JPG",
-    title: "Peppered Gizzard",
-    details: "President of Sales at Binford Ltd",
-    price: `${1},${500}`,
-  },
-  {
-    id: 2,
-    src: "/images/chicken-balls.JPG",
-    title: "Chicken Balls",
-    details: "Brand Manager at J&M Enterprise",
-    price: "5,000",
-  },
-  {
-    id: 3,
-    src: "/images/grilled-lamb.JPG",
-    title: "Grilled Lamb",
-    details: "Brand Manager at J&M Enterprise",
-    price:"1,500",
-  },
-  {
-    id: 4,
-    src: "/images/scotch-egg1.JPG",
-    title: "Scotch Egg",
-    details: "Brand Manager at J&M Enterprise",
-    price: "3,000",
-  },
-  {
-    id: 5,
-    src: "/images/grilled-liver2.JPG",
-    title: "Grilled Liver",
-    details: "President of Sales at Binford",
-    price: "2,500",
-  },
-  {
-    id: 6,
-    src: "/images/spring-roll2.JPG",
-    title: "Spring Rolls",
-    details: "President of Sales at Binford",
-    price: "2,500",
-  },
-  {
-    id: 7,
-    src: "/images/caramel-drumsticks.JPG",
-    title: "Caramel Drumsticks",
-    details: "President of Sales at Binford",
-    price: "2,500",
-  },
-  {
-    id: 8,
-    src: "/images/gizdodo.JPG",
-    title: "Plantain & Gizzard",
-    details: "President of Sales at Binford",
-    price: "2,500",
-  },
-  ]
+  special: [
+    {
+      id: 1,
+      src: "/images/gizdodo2.JPG",
+      title: "Peppered Gizzard",
+      details:
+        "Spicy and flavoured gizzard, a side that combines tender gizzard with peppered sauce ",
+      price: `${1},${500}`,
+    },
+    {
+      id: 2,
+      src: "/images/chicken-balls.JPG",
+      title: "Chicken Balls",
+      details:
+        "Chicken balls filled with protein and prepared with tender chicken breasts",
+      price: "5,000",
+    },
+    {
+      id: 3,
+      src: "/images/grilled-lamb.JPG",
+      title: "Grilled Lamb",
+      details:
+        "Tender lamb marinated with a unique blend of spices and grilled to give a smoky flavour.",
+      price: "1,500",
+    },
+    {
+      id: 4,
+      src: "/images/scotch-egg1.JPG",
+      title: "Scotch Egg",
+      details:
+        "A classic scotch egg, with a perfectly cooked egg encased in seasoned sausage meat and golden breadcrumbs",
+      price: "3,000",
+    },
+    {
+      id: 5,
+      src: "/images/grilled-liver2.JPG",
+      title: "Grilled Liver",
+      details:
+        "Savory liver served with a hint of smoky liver and dried pepper flakes",
+      price: "2,500",
+    },
+    {
+      id: 6,
+      src: "/images/spring-roll2.JPG",
+      title: "Spring Rolls",
+      details:
+        "Cripsy and delicious spring rolls filled with a blend of vegetables and served with a savory dipping sauce",
+      price: "2,500",
+    },
+    {
+      id: 7,
+      src: "/images/caramel-drumsticks.JPG",
+      title: "Caramel Drumsticks",
+      details:
+        "Caramel-coated drumsticks with a sweet and savory flavor, dipped in honey and barbeque sauce",
+      price: "2,500",
+    },
+    {
+      id: 8,
+      src: "/images/gizdodo.JPG",
+      title: "Plantain & Gizzard",
+      details:
+        "Fried plantain served with peppered gizzard, eaten as a meal or served as a side",
+      price: "2,500",
+    },
+  ],
 };
+
+// export function getFoodDetails(id) {
+//   let foodViewed = products.popular.find((food) => food.id === id);
+//   if (!foodViewed) {
+//     foodViewed = products.special.find((food) => food.id === id);
+//   }
+//   return foodViewed;
+// }
+
+// export function getFoodDetails(category, foodId) {
+//   const foodViewed = products[category];
+//   return foodViewed?.find((food) => food.id === parseInt(foodId, 10));
+// }

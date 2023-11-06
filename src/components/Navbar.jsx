@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState, useContext } from "react";
+import { CartContext } from "../CartContext";
 // import Logo from '../assets/svg/logo.svg'
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -32,6 +33,7 @@ export const links = [
 ];
 
 const Navbar = () => {
+  const { cartItems } = useContext(CartContext);
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -64,17 +66,34 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="hidden lg:flex flex-row gap-10 items-center justify-between">
-          <FontAwesomeIcon icon={faCartShopping} />
+        <div className="hidden lg:flex flex-row gap-16 items-center justify-between">
+          <Link>
+            <div className="relative">
+              <span className="text-[#ff7518] w-[fit-content] bg-orange-100 py-[0.18rem] px-[0.6rem] bottom-4 font-bold text-sm absolute left-3 rounded-full ">
+                {cartItems.length}
+              </span>
+              <FontAwesomeIcon icon={faCartShopping} size="xl" />
+            </div>
+          </Link>
           <Button text={"Get in touch"} className=" text-white" />
         </div>
-        <button onClick={handleMenu} className="block lg:hidden">
-          {menuOpen ? (
-            <FontAwesomeIcon icon={faXmark} />
-          ) : (
-            <FontAwesomeIcon icon={faBars} />
-          )}
-        </button>
+        <div className="flex lg:hidden flex-row gap-10 items-center justify-between">
+          <Link>
+            <div className="relative">
+              <span className="text-[#ff7518]  bg-orange-100 py-[0.11rem] w-[fit-content] text-center h-5 px-[0.4rem] bottom-3 font-bold text-xs absolute left-3 rounded-full ">
+                {cartItems.length}
+              </span>
+              <FontAwesomeIcon icon={faCartShopping} size="md" />
+            </div>
+          </Link>
+          <button onClick={handleMenu} className="">
+            {menuOpen ? (
+              <FontAwesomeIcon icon={faXmark} />
+            ) : (
+              <FontAwesomeIcon icon={faBars} />
+            )}
+          </button>
+        </div>
       </div>
       {menuOpen && <MobileMenu />}
     </div>
