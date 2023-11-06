@@ -1,5 +1,5 @@
 // import React from 'react';
-import heroImg from '../assets/hero4.avif';  
+import heroImg from '../assets/main.jpg';  
 import {Button} from '../components/Button.jsx'
 
 const Hero = () => {
@@ -11,7 +11,7 @@ const Hero = () => {
                 <Button text={"Get started"} className="text-white"></Button>
             </div>
             <div className="right">
-                <img className='rounded-full h-[500px] object-cover' src={heroImg} alt="hero-image" />
+                <img className='rounded-xl object-cover' src={heroImg} alt="hero-image" />
             </div>
         </div>
     )

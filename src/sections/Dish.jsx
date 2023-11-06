@@ -1,5 +1,7 @@
-import React from 'react';
-import plate1 from '../assets/heroImg.jpeg';  
+// import React from 'react';
+import plate1 from '../assets/main.jpg';  
+import plate2 from '../assets/heroImg.jpeg';  
+import plate3 from '../assets/main1.jpg';  
 // import {Button} from '../Components/Button'
 
 const Dish = () => {
@@ -42,7 +44,7 @@ const Dish = () => {
           <div className="box1 px-10 py-5 shadow-md flex flex-col gap-3 rounded-lg">
             <img
               className="rounded-full mx-auto w-32 mb-2"
-              src={plate1}
+              src={plate2}
               alt=""
             />
             <h3 className="font-semibold text-2xl">Chicken veg mix</h3>
@@ -67,7 +69,7 @@ const Dish = () => {
           <div className="box1 px-10 py-5 shadow-md flex flex-col gap-3 rounded-lg">
             <img
               className="rounded-full mx-auto w-32 mb-2"
-              src={plate1}
+              src={plate3}
               alt=""
             />
             <h3 className="font-semibold text-2xl">Chicken veg mix</h3>
