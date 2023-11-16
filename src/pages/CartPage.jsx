@@ -15,7 +15,7 @@ import { CartContext } from "../CartContext";
 import { products } from "../data";
 import { Button } from "../components/Button";
 
-export const FoodDetails = () => {
+export const CartPage = () => {
   const [quantity, setQuantity] = useState(0);
   const [selectedOption, setSelectedOption] = useState("");
   const { category, foodId } = useParams();
@@ -203,7 +203,7 @@ export const FoodDetails = () => {
           </div>
         </div>
       ) : (
-        <p> Meal not found </p>
+        <p> You have not added any meal to your cart </p>
       )}
     </section>
   );
