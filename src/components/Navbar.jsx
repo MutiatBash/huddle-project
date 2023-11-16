@@ -67,7 +67,7 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="hidden lg:flex flex-row gap-16 items-center justify-between">
-          <Link>
+          <Link to="/cart">
             <div className="relative">
               <span className="text-[#ff7518] w-[fit-content] bg-orange-100 py-[0.18rem] px-[0.6rem] bottom-4 font-bold text-sm absolute left-3 rounded-full ">
                 {cartItems.length}
@@ -78,7 +78,7 @@ const Navbar = () => {
           <Button text={"Get in touch"} className=" text-white" />
         </div>
         <div className="flex lg:hidden flex-row gap-10 items-center justify-between">
-          <Link>
+          <Link to="/cart">
             <div className="relative">
               <span className="text-[#ff7518]  bg-orange-100 py-[0.11rem] w-[fit-content] text-center h-5 px-[0.4rem] bottom-3 font-bold text-xs absolute left-3 rounded-full ">
                 {cartItems.length}
